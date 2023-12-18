@@ -4,7 +4,11 @@ let logger = {
     log : (...args) => {
         console.log(...args)
         if (SDK.debug) {
-            SDK.console.log(JSON.stringify(...args))
+            if (typeof args[0] === "object") {
+                SDK.console.log(JSON.stringify(...args))
+            } else {
+                SDK.console.log(args)
+            }
         }
     }
 }
