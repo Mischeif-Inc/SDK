@@ -4,7 +4,7 @@ let logger = {
     log : (...args) => {
         console.log(...args)
         if (SDK.debug) {
-            SDK.console.log(...args)
+            SDK.console.log(JSON.stringify(...args))
         }
     }
 }

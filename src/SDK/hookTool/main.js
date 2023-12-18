@@ -8,7 +8,7 @@ function hookTool (hookName) {
             if (this) {
                 hook = this;
                 SDK.logger.log(hookName + ' found')
-                SDK.logger.log(JSON.stringify(this));
+                SDK.logger.log(this);
             }
             const descriptor = Object.getOwnPropertyDescriptor(this, hookName);
             return descriptor ? descriptor.value : undefined;
@@ -19,7 +19,7 @@ function hookTool (hookName) {
             if (this) {
                 hook = this;
                 SDK.logger.log(hookName + ' found')
-                SDK.logger.log(JSON.stringify(this));
+                SDK.logger.log(this);
             }
     
             // Add the hook for the current object

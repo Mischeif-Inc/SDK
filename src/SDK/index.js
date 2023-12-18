@@ -4,8 +4,8 @@ import wpTool from "./wpTool/main";
 import logger from "./logger";
 import hookTool from "./hookTool/main";
 
-let debug = true
-let globalSDK = true
+let debug = false
+let globalSDK = false
 
 
 let SDK = {
@@ -18,6 +18,7 @@ let SDK = {
 }
 
 function enableDebug () {
+    SDK.debug = true
     SDK.console = initConsole()
 }
 
