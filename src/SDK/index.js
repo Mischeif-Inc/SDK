@@ -4,7 +4,7 @@ import wpTool from "./wpTool/main";
 import logger from "./logger";
 import hookTool from "./hookTool/main";
 
-let debug = false
+let debug = true
 let globalSDK = true
 
 
@@ -31,5 +31,6 @@ if (debug === true) {
 if (globalSDK === true) {
     initGlobalSDK()
 }
+
 
 export default SDK

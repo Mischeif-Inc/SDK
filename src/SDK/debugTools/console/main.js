@@ -66,7 +66,6 @@ function initConsole () {
         logsContainer.innerHTML = ''
     }
 
-    window.lol = inputContainer
     return { myPanel, log, logsContainer, clearConsole }
 }
 
