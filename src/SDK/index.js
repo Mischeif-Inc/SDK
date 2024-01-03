@@ -1,5 +1,6 @@
 import initConsole from "./debugTools/console/main";
 import createPanel from "./UI/main";
+import SUI from "./UI/SUI";
 import wpTool from "./wpTool/main";
 import logger from "./logger";
 import hookTool from "./hookTool/main";
@@ -13,6 +14,7 @@ let SDK = {
     logger,
     wpTool,
     createPanel,
+    SUI,
     enableDebug,
     hookTool
 }
